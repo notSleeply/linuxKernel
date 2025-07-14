@@ -18,8 +18,5 @@ ${BUILD}/boot/%.o: ${BOOT}
 clean:
 	$(shell rm -rf ${BUILD})
 
-bochs:all
-	bochs -q -f bochsrc.txt
-
 qemu:all
 	qemu-system-x86_64 -hda $(HD_IMG)
